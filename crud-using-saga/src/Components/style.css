@@ -1,0 +1,122 @@
+   .user-cards-container {
+       display: flex;
+       flex-wrap: wrap;
+       justify-content: flex-start;
+   }
+
+   .user-card {
+       flex: 0 0 calc(33.333% - 20px);
+       max-width: 300px;
+       border: 1px solid #ccc;
+       border-radius: 10px;
+       padding: 20px;
+       margin-bottom: 20px;
+       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+       margin-right: 20px;
+   }
+
+   .user-card:last-child {
+       margin-right: 0;
+   }
+
+   .user-card .user-photo {
+       width: 100px;
+       height: 100px;
+       border-radius: 50%;
+       overflow: hidden;
+       margin: 0 auto 20px;
+   }
+
+   .user-card .user-photo img {
+       width: 100%;
+       height: 100%;
+       object-fit: cover;
+   }
+
+   .user-card h1 {
+       font-size: 18px;
+       margin-bottom: 10px;
+   }
+
+   .user-card h2 {
+       font-size: 16px;
+       color: #666;
+       margin-bottom: 10px;
+   }
+
+   .user-card p {
+       font-size: 14px;
+       color: #888;
+       margin-bottom: 10px;
+   }
+
+   .user-card button {
+       padding: 8px 16px;
+       font-size: 14px;
+       border: none;
+       border-radius: 5px;
+       cursor: pointer;
+       outline: none;
+   }
+
+   .user-card .btn-danger {
+       background-color: #ff4d4f;
+       color: #fff;
+   }
+
+   .user-card .btn-primary {
+       background-color: #1890ff;
+       color: #fff;
+   }
+
+   .user-card .btn-primary:hover,
+   .user-card .btn-danger:hover {
+       opacity: 0.8;
+   }
+
+   .new-user-card {
+       max-width: 300px;
+       border: 1px solid #ccc;
+       border-radius: 10px;
+       padding: 20px;
+       margin-bottom: 20px;
+       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+       margin-right: 20px;
+   }
+
+   .new-user-card:last-child {
+       margin-right: 0;
+   }
+
+   .form-container {
+       max-width: 400px;
+       margin: 20px auto;
+       padding: 20px;
+       border: 1px solid #ccc;
+       border-radius: 10px;
+       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+   }
+
+   .form-container input[type="text"],
+   .form-container input[type="email"],
+   .form-container input[type="password"] {
+       width: 100%;
+       padding: 10px;
+       margin-bottom: 15px;
+       border: 1px solid #ccc;
+       border-radius: 5px;
+   }
+
+   .form-container button {
+       width: 100%;
+       padding: 10px;
+       background-color: #1890ff;
+       color: #fff;
+       border: none;
+       border-radius: 5px;
+       cursor: pointer;
+   }
+
+   .form-container button:hover {
+       background-color: #1478e0;
+   }

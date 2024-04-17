@@ -1,0 +1,28 @@
+import { takeLatest } from "redux-saga/effects";
+import { DELETE_USER_PENDING, FATCH_USER_PENDING, GET_USER_PENDING, POST_USER_PENDING, UPDATE_USER_PENDING } from "../../user/action/Action";
+import { HANDLE_DELETE_USER, HANDLE_FATCH_USER, HANDLE_GET_USER, HANDLE_POST_USER, HANDLE_UPDATE_USER } from "../user/ManageUser";
+
+function* HANDLE_GET_USER_SAGA(){
+    yield takeLatest(GET_USER_PENDING,HANDLE_GET_USER);
+}
+
+function* HANDLE_POST_USER_SAGA(){
+    yield takeLatest(POST_USER_PENDING, HANDLE_POST_USER);
+}
+
+function* HANDLE_DELETE_USER_SAGA(){
+    yield takeLatest(DELETE_USER_PENDING, HANDLE_DELETE_USER);
+}
+
+function* HANDLE_FATCH_USER_SAGA(){
+    yield takeLatest(FATCH_USER_PENDING, HANDLE_FATCH_USER);
+}
+function* HANDLE_UPDATE_USER_SAGA(){
+    yield takeLatest(UPDATE_USER_PENDING, HANDLE_UPDATE_USER);
+}
+
+export {HANDLE_GET_USER_SAGA, 
+        HANDLE_POST_USER_SAGA, 
+        HANDLE_DELETE_USER_SAGA,
+        HANDLE_FATCH_USER_SAGA, 
+        HANDLE_UPDATE_USER_SAGA};
